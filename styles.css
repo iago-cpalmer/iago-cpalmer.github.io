@@ -84,17 +84,69 @@ body {
     border-radius: 10px;
 }
 
-/* Contact links */
+
 .contact-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin: 40px 0;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact-links a img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.contact-links a img:hover {
+    transform: scale(1.15);
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    word-break: break-all;
+}
+.contact-links {
+    max-width: 600px;
+    margin: 2rem auto;
+    margin-top: 5rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column; /* Changed from default to stack items vertically */
+    align-items: center; /* Center the content */
+    justify-content: center;
+    gap: 1.5rem; /* Gap between icons and email */
+    margin-bottom: 1.5rem;
+}
+
+.contact-links .icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-links .icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.contact-links .icons a img:hover {
+    transform: scale(1.15);
+}
+
+.contact-links p {
+    font-size: 1.1rem;
+    margin: 0; /* Remove default margin */
+    word-break: break-all;
 }
 
 /* Responsive Design */
