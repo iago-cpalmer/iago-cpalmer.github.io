@@ -5,280 +5,282 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-     <link rel="icon" type="image/x-icon" href="img/favicon.ico"> 
+     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
      <script src="index.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <a class="notif-section" href="https://diglib.eg.org/server/api/core/bitstreams/eac8d344-0f6b-4caf-894a-def55c6b7fd1/content" target="_blank">
-        <div class="notif-header">
-            <h1>🔔 Check my Paper published at CEIG'25</h1>
-            <p>Multidisciplinary Development of an Educational 3D Simulation Game for Bee Biology using Advanced Graphics Techniques</p>
-        </div>
-    </a>
-
-    <hr class="hor-line-separator">
-    
-    <div class="summary-section">
-        <div class="summary-header">
-            <h1>Iago Caldentey Palmer</h1>
-            <p>Software Developer &ndash; C++ &middot; Real-time Simulation &middot; Aerospace &amp; Defence</p>
-        </div>
-
-        <div class="summary-content">
-            <div class="summary-card summary-card-wide">
-                <h3>Profile</h3>
-                <p>Software developer with over two years of professional C++ development on Linux for real-time systems, most recently on an Airbus Defence and Space programme. Builds real-time simulations: an F-16 simulator in VR, physics simulators and a one-million-agent simulation that led to a CEIG 2025 paper.</p>
-                <br>
-                <p><strong>Based in Switzerland &middot; EU citizen &middot; Available immediately and ready to relocate</strong></p>
+    <main class="page">
+        <header class="hero">
+            <div class="hero-intro">
+                <p class="eyebrow">Software Developer &ndash; C++ &middot; Real-time Simulation &middot; Aerospace &amp; Defence</p>
+                <h1>Iago Caldentey Palmer</h1>
+                <p class="hero-profile">Software developer with over two years of professional C++ development on Linux for real-time systems, most recently on an Airbus Defence and Space programme. Builds real-time simulations: an F-16 simulator in VR, physics simulators and a one-million-agent simulation that led to a CEIG 2025 paper.</p>
+                <p class="status"><span class="status-dot"></span>Available immediately &middot; Based in Switzerland &middot; EU citizen &middot; Ready to relocate</p>
             </div>
 
-            <div class="summary-card summary-card-wide">
-                <h3>Professional Experience</h3>
-                <p><strong>Rendering and Software Engineer &ndash; Cockpit Display Systems (Airbus SIRTAP)</strong><br>
-                Orbital Critical Systems, external contractor for Airbus Defence and Space<br>
-                Getafe (Madrid), Spain (January 2026 - September 2026)</p>
-                <ul class="experience-list">
-                    <li>Contributed to the architecture of a custom rendering engine tailored to airborne cockpit systems.</li>
-                    <li>Designed and implemented a large, highly flexible occlusion system for the cockpit's overlapping display elements and layouts.</li>
-                    <li>Reworked GPU submission from thousands of draw calls per frame to a single one.</li>
-                    <li>Developed, documented and verified code in line with aerospace software development standards.</li>
-                </ul>
-                <p class="experience-tech">C++, OpenGL, Linux, Apitrace, Valgrind, SCADE Display, ARINC 661, Git, Bash</p>
-                <br>
-                <p><strong>Game, Engine and Tools Programmer</strong><br>
-                Merkur Dosniha<br>
-                Madrid, Spain (July 2024 - December 2025)</p>
-                <ul class="experience-list">
-                    <li>Developed low-level systems of the studio's proprietary C++ and OpenGL game engine.</li>
-                    <li>Built internal engine tools: performance profiler, memory allocation utilities, resource manager, sound manager and audio mixer, and debugging utilities.</li>
-                    <li>Designed and implemented gameplay systems in C++ for shipped game projects.</li>
-                    <li>Analysed disassembled code to diagnose and fix bugs and random crashes.</li>
-                </ul>
-                <p class="experience-tech">C++, OpenGL, Vulkan, RenderDoc, Python, Linux, Git, Bash</p>
-            </div>
+            <dl class="readout">
+                <div>
+                    <dt>Professional C++</dt>
+                    <dd>2+ years</dd>
+                </div>
+                <div>
+                    <dt>Focus</dt>
+                    <dd>Real-time simulation</dd>
+                </div>
+                <div>
+                    <dt>Sector</dt>
+                    <dd>Aerospace &amp; Defence</dd>
+                </div>
+            </dl>
+        </header>
 
-            <div class="summary-card">
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>C++, C, C#</li>
-                    <li>Python, Ada, Bash</li>
-                    <li>Java, MATLAB</li>
-                    <li>68k Assembly</li>
-                </ul>
-            </div>
+        <a class="paper-link" href="https://diglib.eg.org/server/api/core/bitstreams/eac8d344-0f6b-4caf-894a-def55c6b7fd1/content" target="_blank" rel="noopener noreferrer">
+            <span class="paper-tag">Paper &middot; CEIG'25</span>
+            <span class="paper-title">Multidisciplinary Development of an Educational 3D Simulation Game for Bee Biology using Advanced Graphics Techniques</span>
+            <span class="paper-arrow" aria-hidden="true">&rarr;</span>
+        </a>
 
-            <div class="summary-card">
-                <h3>Graphics</h3>
-                <ul>
-                    <li>OpenGL, Vulkan</li>
-                    <li>GLSL, HLSL, CUDA</li>
-                    <li>Unity</li>
-                    <li>SCADE Display, ARINC 661</li>
-                </ul>
-            </div>
+        <section class="section" id="experience">
+            <h2 class="section-title">Experience</h2>
 
-            <div class="summary-card">
-                <h3>Profiling &amp; Debugging</h3>
-                <ul>
-                    <li>RenderDoc, Apitrace</li>
-                    <li>Valgrind (Callgrind, Cachegrind, Memcheck)</li>
-                    <li>IDA</li>
-                </ul>
-            </div>
+            <article class="role">
+                <p class="role-date">Jan 2026 &ndash; Sep 2026</p>
+                <div>
+                    <h3>Rendering and Software Engineer &ndash; Cockpit Display Systems (Airbus SIRTAP)</h3>
+                    <p class="role-place">Orbital Critical Systems, external contractor for Airbus Defence and Space &middot; Getafe (Madrid), Spain</p>
+                    <ul>
+                        <li>Contributed to the architecture of a custom rendering engine tailored to airborne cockpit systems.</li>
+                        <li>Designed and implemented a large, highly flexible occlusion system for the cockpit's overlapping display elements and layouts.</li>
+                        <li>Reworked GPU submission from thousands of draw calls per frame to a single one.</li>
+                        <li>Developed, documented and verified code in line with aerospace software development standards.</li>
+                    </ul>
+                    <p class="role-tech">C++, OpenGL, Linux, Apitrace, Valgrind, SCADE Display, ARINC 661, Git, Bash</p>
+                </div>
+            </article>
 
-            <div class="summary-card">
-                <h3>Systems &amp; Other</h3>
-                <ul>
-                    <li>Linux, Windows, Git</li>
-                    <li>TCP/UDP networking, MQTT</li>
-                    <li>RTOS, Arduino</li>
-                    <li>OpenCV</li>
-                </ul>
-            </div>
+            <article class="role">
+                <p class="role-date">Jul 2024 &ndash; Dec 2025</p>
+                <div>
+                    <h3>Game, Engine and Tools Programmer</h3>
+                    <p class="role-place">Merkur Dosniha &middot; Madrid, Spain</p>
+                    <ul>
+                        <li>Developed low-level systems of the studio's proprietary C++ and OpenGL game engine.</li>
+                        <li>Built internal engine tools: performance profiler, memory allocation utilities, resource manager, sound manager and audio mixer, and debugging utilities.</li>
+                        <li>Designed and implemented gameplay systems in C++ for shipped game projects.</li>
+                        <li>Analysed disassembled code to diagnose and fix bugs and random crashes.</li>
+                    </ul>
+                    <p class="role-tech">C++, OpenGL, Vulkan, RenderDoc, Python, Linux, Git, Bash</p>
+                </div>
+            </article>
+        </section>
 
-            <div class="summary-card">
-                <h3>Education</h3>
-                <p><strong>Master's Degree</strong><br>
-                Computer Graphics, Video Game Development and Virtual Reality<br>
-                Universidad Rey Juan Carlos, Madrid (2025-2026)</p>
-                <br>
-                <p><strong>Bachelor's Degree</strong><br>
-                    Computer Engineering<br>
-                    Specialisation in Artificial Intelligence and Computation<br>
-                    Universitat de les Illes Balears, Palma (2020-2024)</p>
-            </div>
+        <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
 
-            <div class="summary-card">
-                <h3>Languages</h3>
-                <ul>
-                    <li>Spanish: Native</li>
-                    <li>Catalan: Native</li>
-                    <li>English: C1 &ndash; Cambridge C1 Advanced (2025)</li>
-                    <li>German: Beginner &ndash; currently taking classes</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    <div class="awards-section">
-        <div class="awards-header">
-            <h1>Awards & Achievements</h1>
-        </div>
-        
-        <div class="awards-content">
+            <div class="grid">
+                <a class="project project-featured" href="https://github.com/iago-cpalmer/f16-simulator" target="_blank" rel="noopener noreferrer">
+                    <img src="https://raw.githubusercontent.com/iago-cpalmer/f16-simulator/main/Docs/cockpit.png" alt="F-16 cockpit view with the HUD in level flight" loading="lazy">
+                    <span class="project-caption">F-16 Simulator in VR</span>
+                    <span class="project-hint">View repository</span>
+                </a>
 
-            <div class="award-card">
-                <h3>Research Paper Published</h3>
-                <div class="award-year">2025</div>
-                <p><strong>CEIG'25</strong> <br>(Spanish Congress of Computer Graphics)</p>
-                <div class="award-description">
-                    Research paper titled 'Multidisciplinary Development of an Educational 3D Simulation Game for Bee Biology using Advanced Graphics Techniques' published.
+                <div class="project project-choice">
+                    <img src="img/bee.png" alt="3D Bee Colony simulation" loading="lazy">
+                    <div class="project-actions">
+                        <a href="https://youtu.be/JiE2EDNdOU4" target="_blank" rel="noopener noreferrer">Watch video</a>
+                        <a href="https://github.com/iago-cpalmer/bee-3d-simulation" target="_blank" rel="noopener noreferrer">View repository</a>
+                    </div>
+                </div>
+
+                <div class="project project-choice">
+                    <img src="img/ocean_sim.png" alt="Ocean Waves Simulator (OpenGL, C++)" loading="lazy">
+                    <div class="project-actions">
+                        <a href="https://www.youtube.com/watch?v=otPELxPIuLw" target="_blank" rel="noopener noreferrer">Watch video</a>
+                        <a href="https://github.com/iago-cpalmer/Ocean-Wave-Simulator" target="_blank" rel="noopener noreferrer">View repository</a>
+                    </div>
+                </div>
+
+                <a class="project" href="https://github.com/iago-cpalmer/3d-cloth-simulator" target="_blank" rel="noopener noreferrer">
+                    <img src="https://raw.githubusercontent.com/iago-cpalmer/3d-cloth-simulator/main/docs/drape.png" alt="A checkered cloth draped over a sphere" loading="lazy">
+                    <span class="project-caption">Cloth Simulator</span>
+                    <span class="project-hint">View repository</span>
+                </a>
+
+                <a class="project" href="https://github.com/iago-cpalmer/rigid-body-simulator-constrained" target="_blank" rel="noopener noreferrer">
+                    <img src="https://raw.githubusercontent.com/iago-cpalmer/rigid-body-simulator-constrained/main/docs/screenshot.png" alt="A two-box chain swinging from its fixed anchor" loading="lazy">
+                    <span class="project-caption">Rigid Body Simulator</span>
+                    <span class="project-hint">View repository</span>
+                </a>
+
+                <a class="project" href="https://github.com/iago-cpalmer/eulerian-fluid-simulator" target="_blank" rel="noopener noreferrer">
+                    <img src="https://raw.githubusercontent.com/iago-cpalmer/eulerian-fluid-simulator/main/docs/screenshot.png" alt="Coloured smoke spreading through a closed box" loading="lazy">
+                    <span class="project-caption">Eulerian Fluid Simulator</span>
+                    <span class="project-hint">View repository</span>
+                </a>
+
+                <a class="project project-text" href="https://github.com/iago-cpalmer/fp-shooter-multiplayer-pc-arduino" target="_blank" rel="noopener noreferrer">
+                    <h3>Networked FPS on Arduino</h3>
+                    <p class="project-tech">RTOS, TCP/IP, MQTT, OpenGL/OpenTK</p>
+                    <p>Multiplayer shooter on Arduino clients, with its own engine and level editor.</p>
+                    <span class="project-hint">View repository</span>
+                </a>
+
+                <a class="project" href="https://github.com/iago-cpalmer/rtx-no-vk-ext" target="_blank" rel="noopener noreferrer">
+                    <img src="https://raw.githubusercontent.com/iago-cpalmer/rtx-no-vk-ext/main/docs/images/cornell_box.png" alt="Two spheres with ray-traced shadows in a Cornell box" loading="lazy">
+                    <span class="project-caption">Real-time RTX on Vulkan</span>
+                    <span class="project-hint">View repository</span>
+                </a>
+
+                <a class="project" href="https://github.com/iago-cpalmer/cpu-raytracer" target="_blank" rel="noopener noreferrer">
+                    <img src="https://raw.githubusercontent.com/iago-cpalmer/cpu-raytracer/main/docs/table.png" alt="Path-traced glass of water and glossy bowl on a table" loading="lazy">
+                    <span class="project-caption">Offline Path Tracer</span>
+                    <span class="project-hint">View repository</span>
+                </a>
+
+                <a class="project" href="https://www.youtube.com/watch?v=Y-s4m4lCx-g" target="_blank" rel="noopener noreferrer">
+                    <img src="img/mc_proj.png" alt="Minecraft clone" loading="lazy">
+                    <span class="project-hint">Watch video</span>
+                </a>
+
+                <a class="project" href="https://youtu.be/EHwUT96cdLI" target="_blank" rel="noopener noreferrer">
+                    <img src="img/gen.png" alt="Genesis Witness" loading="lazy">
+                    <span class="project-hint">Watch video</span>
+                </a>
+
+                <div class="project project-choice">
+                    <img src="https://img.youtube.com/vi/4PqxtYXToQo/hqdefault.jpg" alt="Super Mario Bros clone in 68k assembly" loading="lazy">
+                    <span class="project-caption">Super Mario Bros clone in 68k Assembly</span>
+                    <div class="project-actions">
+                        <a href="https://youtu.be/4PqxtYXToQo" target="_blank" rel="noopener noreferrer">Watch video</a>
+                        <a href="https://github.com/iago-cpalmer/super-mario-assembly" target="_blank" rel="noopener noreferrer">View repository</a>
+                    </div>
+                </div>
+
+                <a class="project project-text" href="https://github.com/iago-cpalmer/coral-engine" target="_blank" rel="noopener noreferrer">
+                    <h3>Coral Engine</h3>
+                    <p class="project-tech">C++, OpenGL</p>
+                    <p>3D real-time rendering engine.</p>
+                    <span class="project-hint">View repository</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills">
+                <div>
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>C++, C, C#</li>
+                        <li>Python, Ada, Bash</li>
+                        <li>Java, MATLAB</li>
+                        <li>68k Assembly</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Graphics</h3>
+                    <ul>
+                        <li>OpenGL, Vulkan</li>
+                        <li>GLSL, HLSL, CUDA</li>
+                        <li>Unity</li>
+                        <li>SCADE Display, ARINC 661</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Profiling &amp; Debugging</h3>
+                    <ul>
+                        <li>RenderDoc, Apitrace</li>
+                        <li>Valgrind (Callgrind, Cachegrind, Memcheck)</li>
+                        <li>IDA</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Systems &amp; Other</h3>
+                    <ul>
+                        <li>Linux, Windows, Git</li>
+                        <li>TCP/UDP networking, MQTT</li>
+                        <li>RTOS, Arduino</li>
+                        <li>OpenCV</li>
+                    </ul>
                 </div>
             </div>
+        </section>
 
-            <div class="award-card">
-                <h3>Hunger4Innovation Hackathon Winner</h3>
-                <div class="award-year">2023</div>
-                <p><strong>12th Edition Winner</strong></p>
-                <div class="award-description">
-                    Held in Madrid, this edition's challenge was proposed by Alstom. Our team developed an innovative solution that earned first place among all participants.
+        <section class="section" id="education">
+            <h2 class="section-title">Education &amp; Languages</h2>
+
+            <div class="education">
+                <div>
+                    <p class="role-date">2025 &ndash; 2026</p>
+                    <h3>Master's Degree</h3>
+                    <p>Computer Graphics, Video Game Development and Virtual Reality</p>
+                    <p class="role-place">Universidad Rey Juan Carlos, Madrid</p>
+                </div>
+                <div>
+                    <p class="role-date">2020 &ndash; 2024</p>
+                    <h3>Bachelor's Degree</h3>
+                    <p>Computer Engineering, specialisation in Artificial Intelligence and Computation</p>
+                    <p class="role-place">Universitat de les Illes Balears, Palma</p>
+                </div>
+                <div>
+                    <p class="role-date">Languages</p>
+                    <ul>
+                        <li>Spanish: Native</li>
+                        <li>Catalan: Native</li>
+                        <li>English: C1 &ndash; Cambridge C1 Advanced (2025)</li>
+                        <li>German: Beginner &ndash; currently taking classes</li>
+                    </ul>
                 </div>
             </div>
-            
-            <div class="award-card">
-                <h3>Mallorca Game Jam Champion</h3>
-                <div class="award-year">2024</div>
-                <p><strong>Triple Winner</strong></p>
-                <div class="award-description">
-                    Won three categories in the 2024 Mallorca Game Jam with a 3D puzzle game developed in 7 days.
-                <ul>
-                    <li>Best Game</li>
-                    <li>Best Art</li>
-                    <li>Most polished game</li>
-                </ul>
+        </section>
+
+        <section class="section" id="awards">
+            <h2 class="section-title">Awards &amp; Achievements</h2>
+
+            <article class="award">
+                <p class="role-date">2025</p>
+                <div>
+                    <h3>Research Paper Published &ndash; CEIG'25</h3>
+                    <p>Research paper titled 'Multidisciplinary Development of an Educational 3D Simulation Game for Bee Biology using Advanced Graphics Techniques' published at the Spanish Congress of Computer Graphics.</p>
                 </div>
-            </div>
-            
-            <div class="award-card">
-                <h3>CEIG'23 Organizing Committee</h3>
-                <div class="award-year">2023</div>
-                <p><strong>Spanish Congress of Computer Graphics</strong></p>
-                <div class="award-description">
-                    Member of the organizing committee for the Spanish Congress of Computer Graphics, contributing to the academic and professional computer graphics community.
+            </article>
+
+            <article class="award">
+                <p class="role-date">2024</p>
+                <div>
+                    <h3>Mallorca Game Jam Champion &ndash; Triple Winner</h3>
+                    <p>Won three categories in the 2024 Mallorca Game Jam with a 3D puzzle game developed in 7 days: Best Game, Best Art and Most polished game.</p>
                 </div>
-            </div>
-            
-            
-        </div>
-    </div>
-    
-    <h1 class="projects-title">Projects</h1>
+            </article>
 
-    <div class="grid">
-        <!-- Both a video and a repo: the options appear on hover. -->
-        <div class="project project-choice">
-            <img src="img/bee.png" alt="3D Bee Colony simulation" loading="lazy">
-            <div class="project-actions">
-                <a href="https://youtu.be/JiE2EDNdOU4" target="_blank" rel="noopener noreferrer">Watch video</a>
-                <a href="https://github.com/iago-cpalmer/bee-3d-simulation" target="_blank" rel="noopener noreferrer">View repository</a>
-            </div>
-        </div>
+            <article class="award">
+                <p class="role-date">2023</p>
+                <div>
+                    <h3>Hunger4Innovation Hackathon Winner &ndash; 12th Edition</h3>
+                    <p>Held in Madrid, this edition's challenge was proposed by Alstom. Our team developed an innovative solution that earned first place among all participants.</p>
+                </div>
+            </article>
 
-        <div class="project project-choice">
-            <img src="img/ocean_sim.png" alt="Ocean Waves Simulator (OpenGL, C++)" loading="lazy">
-            <div class="project-actions">
-                <a href="https://www.youtube.com/watch?v=otPELxPIuLw" target="_blank" rel="noopener noreferrer">Watch video</a>
-                <a href="https://github.com/iago-cpalmer/Ocean-Wave-Simulator" target="_blank" rel="noopener noreferrer">View repository</a>
-            </div>
-        </div>
+            <article class="award">
+                <p class="role-date">2023</p>
+                <div>
+                    <h3>CEIG'23 Organizing Committee</h3>
+                    <p>Member of the organizing committee for the Spanish Congress of Computer Graphics, contributing to the academic and professional computer graphics community.</p>
+                </div>
+            </article>
+        </section>
 
-        <a class="project" href="https://github.com/iago-cpalmer/rtx-no-vk-ext" target="_blank" rel="noopener noreferrer">
-            <img src="https://raw.githubusercontent.com/iago-cpalmer/rtx-no-vk-ext/main/docs/images/rtx_shadows.png" alt="Scene with ray-traced shadows" loading="lazy">
-            <span class="project-caption">Real-time Vulkan Renderer</span>
-            <span class="project-hint">View repository</span>
-        </a>
-
-        <a class="project" href="https://github.com/iago-cpalmer/cpu-raytracer" target="_blank" rel="noopener noreferrer">
-            <img src="https://raw.githubusercontent.com/iago-cpalmer/cpu-raytracer/main/docs/table.png" alt="Path-traced glass of water and glossy bowl on a table" loading="lazy">
-            <span class="project-caption">Offline Path Tracer</span>
-            <span class="project-hint">View repository</span>
-        </a>
-
-        <a class="project" href="https://www.youtube.com/watch?v=Y-s4m4lCx-g" target="_blank" rel="noopener noreferrer">
-            <img src="img/mc_proj.png" alt="Minecraft clone" loading="lazy">
-            <span class="project-hint">Watch video</span>
-        </a>
-
-        <a class="project" href="https://youtu.be/EHwUT96cdLI" target="_blank" rel="noopener noreferrer">
-            <img src="img/gen.png" alt="Genesis Witness" loading="lazy">
-            <span class="project-hint">Watch video</span>
-        </a>
-
-        <div class="project project-choice">
-            <img src="https://img.youtube.com/vi/4PqxtYXToQo/hqdefault.jpg" alt="Super Mario Bros clone in 68k assembly" loading="lazy">
-            <span class="project-caption">Super Mario Bros clone in 68k Assembly</span>
-            <div class="project-actions">
-                <a href="https://youtu.be/4PqxtYXToQo" target="_blank" rel="noopener noreferrer">Watch video</a>
-                <a href="https://github.com/iago-cpalmer/super-mario-assembly" target="_blank" rel="noopener noreferrer">View repository</a>
-            </div>
-        </div>
-
-        <a class="project" href="https://github.com/iago-cpalmer/f16-simulator" target="_blank" rel="noopener noreferrer">
-            <img src="https://raw.githubusercontent.com/iago-cpalmer/f16-simulator/main/Docs/cockpit.png" alt="F-16 cockpit view with the HUD in level flight" loading="lazy">
-            <span class="project-caption">F-16 Simulator in VR</span>
-            <span class="project-hint">View repository</span>
-        </a>
-
-        <a class="project" href="https://github.com/iago-cpalmer/3d-cloth-simulator" target="_blank" rel="noopener noreferrer">
-            <img src="https://raw.githubusercontent.com/iago-cpalmer/3d-cloth-simulator/main/docs/drape.png" alt="A checkered cloth draped over a sphere" loading="lazy">
-            <span class="project-caption">Cloth Simulator</span>
-            <span class="project-hint">View repository</span>
-        </a>
-
-        <a class="project" href="https://github.com/iago-cpalmer/rigid-body-simulator-constrained" target="_blank" rel="noopener noreferrer">
-            <img src="https://raw.githubusercontent.com/iago-cpalmer/rigid-body-simulator-constrained/main/docs/screenshot.png" alt="A two-box chain swinging from its fixed anchor" loading="lazy">
-            <span class="project-caption">Rigid Body Simulator</span>
-            <span class="project-hint">View repository</span>
-        </a>
-
-        <a class="project" href="https://github.com/iago-cpalmer/eulerian-fluid-simulator" target="_blank" rel="noopener noreferrer">
-            <img src="https://raw.githubusercontent.com/iago-cpalmer/eulerian-fluid-simulator/main/docs/screenshot.png" alt="Coloured smoke spreading through a closed box" loading="lazy">
-            <span class="project-caption">Eulerian Fluid Simulator</span>
-            <span class="project-hint">View repository</span>
-        </a>
-
-        <a class="project project-text" href="https://github.com/iago-cpalmer/coral-engine" target="_blank" rel="noopener noreferrer">
-            <h3>Coral Engine</h3>
-            <p class="project-tech">C++, OpenGL</p>
-            <p>3D real-time rendering engine.</p>
-            <span class="project-hint">View repository</span>
-        </a>
-
-        <a class="project project-text" href="https://github.com/iago-cpalmer/fp-shooter-multiplayer-pc-arduino" target="_blank" rel="noopener noreferrer">
-            <h3>Networked FPS on Arduino</h3>
-            <p class="project-tech">RTOS, TCP/IP, MQTT, OpenGL/OpenTK</p>
-            <p>Multiplayer shooter on Arduino clients, with its own engine and level editor.</p>
-            <span class="project-hint">View repository</span>
-        </a>
-    </div>
-
-    <hr class="hor-line-separator">
-    <div class="contact-links" id="contact">
-    <div class="icons">
-        <a href="https://x.com/haukrr_dev" target="_blank">
-            <img src="img/twitter-icon.png" alt="Twitter">
-        </a>
-        <a href="https://github.com/iago-cpalmer" target="_blank">
-            <img src="img/github-icon.png" alt="GitHub">
-        </a>
-        <a href="https://linkedin.com/in/iago-caldentey-palmer" target="_blank">
-            <img src="img/linkedin-icon.png" alt="LinkedIn">
-        </a>
-        <a href="https://www.youtube.com/@haukrr_dev" target="_blank">
-            <img src="img/youtube-icon.png" alt="YouTube">
-        </a>
-    </div>
-    <p>icaldenteypalmer@gmail.com</p>
-</div>
+        <footer class="footer" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <a class="footer-email" href="mailto:icaldenteypalmer@gmail.com">icaldenteypalmer@gmail.com</a>
+            <nav class="footer-links">
+                <a href="https://github.com/iago-cpalmer" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/iago-caldentey-palmer" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.youtube.com/@haukrr_dev" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://x.com/haukrr_dev" target="_blank" rel="noopener noreferrer">X</a>
+            </nav>
+        </footer>
+    </main>
 </body>
 </html>
