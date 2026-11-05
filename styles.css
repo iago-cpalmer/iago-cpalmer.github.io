@@ -180,28 +180,158 @@ body {
     box-sizing: border-box;
 }
 
-.grid a {
+.projects-title {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.project {
     display: block;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.grid a:hover {
+.project:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.grid img {
+.project img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+}
+
+/* Title for images that don't have one drawn on them */
+.project-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 12px 12px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Where a card with a single link goes */
+.project-hint {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.project:hover .project-hint,
+.project:focus-visible .project-hint {
+    opacity: 1;
+}
+
+/* Choice between video and repo for cards that have both */
+.project-actions {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.project-choice:hover .project-actions,
+.project-choice:focus-within .project-actions {
+    opacity: 1;
+}
+
+.project-actions a {
+    padding: 10px 18px;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.project-actions a:hover,
+.project-actions a:focus-visible {
+    background: #1b5f7a;
+    color: #fff;
+}
+
+/* Touch screens can't hover, so keep the choice visible */
+@media (hover: none) {
+    .project-actions {
+        inset: auto 0 0 0;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+        padding-top: 30px;
+        opacity: 1;
+    }
+    .project-choice .project-caption {
+        display: none;
+    }
+}
+
+/* Cards without an image */
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #1f2f46 0%, #1b5f7a 100%);
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-text h3,
+.project-text p {
+    margin: 0;
+}
+
+.project-text h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.project-text .project-tech {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Experience card */
+.summary-card-wide {
+    grid-column: 1 / -1;
+}
+
+.summary-card .experience-list {
+    margin-top: 12px;
+}
+
+.summary-card .experience-tech {
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
 .contact-links {
